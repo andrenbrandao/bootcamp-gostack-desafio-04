@@ -22,7 +22,8 @@ class PostList extends Component {
               name: 'Diego Fernandes',
               avatar: 'https://avatars2.githubusercontent.com/u/2254731?v=4',
             },
-            content: 'Conteúdo do comentário',
+            content:
+              'A Rocketseat está sempre em busca de novos membros para o time, e geralmente ficamos de olho em quem se destaca no Bootcamp, inclusive 80% do nosso time de devs é composto por alunos do Bootcamp. Além disso, se você tem vontade de ensinar gravando vídeos e criando posts, pode me chamar no Discord! (Sério, me chamem mesmo, esse comentário é real).',
           },
         ],
       },
@@ -39,10 +40,19 @@ class PostList extends Component {
           {
             id: 1,
             author: {
-              name: 'André Brandão',
-              avatar: 'https://avatars0.githubusercontent.com/u/3364098?v=4',
+              name: 'Rocketseat',
+              avatar: 'https://avatars0.githubusercontent.com/u/28929274?v=4',
             },
-            content: 'Conteúdo do comentário',
+            content:
+              'Nessa semana iremos aprender Node.js, ReactJS e React Native!',
+          },
+          {
+            id: 2,
+            author: {
+              name: 'Filipe Deschamps',
+              avatar: 'https://avatars0.githubusercontent.com/u/4248081?v=4',
+            },
+            content: 'Cara, essa semana OmniStack está delicinha!',
           },
         ],
       },
@@ -53,7 +63,8 @@ class PostList extends Component {
           avatar: 'https://avatars2.githubusercontent.com/u/2254731?v=4',
         },
         date: '13 Jun 2019',
-        content: 'Fala Dev! Mais algum dúvida por aqui hoje?',
+        content:
+          'Fala galera, beleza?\n\nEstou fazendo o Bootcamp GoStack da Rocketseat e está sendo muito massa! Alguém mais aí fazendo, comenta na publicação para trocarmos uma ideia.',
         comments: [
           {
             id: 1,
@@ -61,7 +72,7 @@ class PostList extends Component {
               name: 'André Brandão',
               avatar: 'https://avatars0.githubusercontent.com/u/3364098?v=4',
             },
-            content: 'Conteúdo do comentário',
+            content: 'Vamo nessa!',
           },
         ],
       },

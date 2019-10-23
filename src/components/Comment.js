@@ -1,33 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Comment from './Comment';
-
-import './Post.css';
+import './Comment.css';
 
 function Post({ data }) {
   const {
     author: { avatar, name },
-    date,
     content,
-    comments,
   } = data;
 
   return (
-    <li className="post-item">
-      <div className="author-info">
+    <li className="comment-item">
+      <div className="comment-container">
         <img src={avatar} alt="avatar" />
-        <div className="post-data">
+        <div className="comment-data">
           <strong>{name}</strong>
-          <small className="date">{date}</small>
+          <p className="comment-content">{content}</p>
         </div>
       </div>
-      <p className="comment-content">{content}</p>
-      <ul className="comment-list">
-        {comments.map(comment => (
-          <Comment key={comment.id} data={comment} />
-        ))}
-      </ul>
     </li>
   );
 }
@@ -38,9 +28,7 @@ Post.propTypes = {
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
     }),
-    date: PropTypes.string.isRequired,
     content: PropTypes.string.isRequired,
-    comments: PropTypes.array.isRequired,
   }).isRequired,
 };
 
